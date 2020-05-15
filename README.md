@@ -7,7 +7,7 @@ source vend/bin/activate
 
 ## Install 
 ```
- pip3 install -r requiments.txt
+ pip3 install -r requirements.txt
  python3 run.py
 ```
 
@@ -41,21 +41,15 @@ Subsequent response definitions will only detail the expected value of the `data
 
 **Arguments**
 
-- `"date":string` date time when send data
-- `"time":string` time when send data
-- `"data":string` list data hearrate
+- `"time":string (format hh:mm:ss)` time when send data
+- `"date":string (format dd:mm:yyyy)` date when send data
+- `"data":string(format data1,data2,...)` list data hearrate
 
 
 **Response**
 
 - `200` on success
 
-```json
-{
-    "date": "20/04/2020",
-    "name": "23:23",
-    "data": "23,445,33,223,45,232,23,34,23",
-}
 ```
 
 
